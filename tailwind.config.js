@@ -5,8 +5,16 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {},
+theme: {
+  extend: {
+      colors: {
+          'qs-blue-main': '#03a9f4',
+          'qs-blue-light': '#CCEFFF',
+      },
+      backdropBlur: {
+          xs: '1px',
+      }
   },
+},
   plugins: [],
 }

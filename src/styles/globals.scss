@@ -8,7 +8,13 @@
 body {
     font-family: "Lato", sans-serif;
     color: $qs-gray-1;
-    margin: 20px 30px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#__next {
+    height: 100vh;
+    padding: 10px;
 }
 
 h1 {

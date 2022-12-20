@@ -20,62 +20,62 @@ const Menu = () => {
                 handleClose={() => ShowGraphModal(false)}
                 show={GraphModal}
             />
-            <div className="box-border flex items-center justify-between p-4">
-                <div>
-                    <h3>Hello, Thijmen!</h3>
+            <div className="box-border flex flex-col w-80 h-screen items-start py-5 px-0 gap-12 justify-start border-r-2 border-slate-200 border-solid">
+                <div className="py-5 px-6">
+                    <h3 className="text-3xl font-bold">Hello, Thijmen!</h3>
                     <p>You have 3 new notifications</p>
                 </div>
-                <div className="flex justify-between w-7/12">
+                <div className="flex justify-start flex-col w-full gap-4 px-4">
                     <div>
                         <BaseButton>
-                            <>
+                            <Text className="flex gap-6 !text-base">
                                 <Image
                                     src={goalsIcon}
                                     width={27.14}
                                     height={27.14}
                                     alt="Goals icon"
                                 />
-                                <Text>Goals</Text>
-                            </>
+                                Goals
+                            </Text>
                         </BaseButton>
                     </div>
                     <div>
                         <BaseButton onPress={() => ShowGraphModal(true)}>
-                            <>
+                            <Text className="flex gap-6 !text-base">
                                 <Image
                                     src={graphEditorIcon}
                                     width={27.14}
                                     height={27.14}
                                     alt="Graph editor icon"
                                 />
-                                <Text>Graph editor</Text>
-                            </>
+                                Graph editor
+                            </Text>
                         </BaseButton>
                     </div>
                     <div>
                         <BaseButton>
-                            <>
+                            <Text className="flex gap-6 !text-base">
                                 <Image
                                     src={dataSharingIcon}
                                     width={27.14}
                                     height={27.14}
                                     alt="datasharing icon"
                                 />
-                                <Text>Data sharing</Text>
-                            </>
+                                Data sharing
+                            </Text>
                         </BaseButton>
                     </div>
                     <div>
                         <BaseButton>
-                            <>
+                            <Text className="flex gap-6 !text-base">
                                 <Image
                                     src={notificationsIcon}
                                     width={27.14}
                                     height={27.14}
                                     alt="notifications icon"
                                 />
-                                <Text>Notifications</Text>
-                            </>
+                                Notifications
+                            </Text>
                         </BaseButton>
                     </div>
                 </div>

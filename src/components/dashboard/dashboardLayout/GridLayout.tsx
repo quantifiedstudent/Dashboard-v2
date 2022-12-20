@@ -17,7 +17,7 @@ const GridLayout = () => {
 
     return (
         <ResponsiveReactGridLayout
-            className="layout"
+            className="layout flex flex-row h-full"
             cols={{ lg: 3, md: 3, sm: 3, xs: 2, xxs: 1 }}
             rowHeight={115}
             isBounded
@@ -26,7 +26,7 @@ const GridLayout = () => {
                 return (
                     <span
                         key={index}
-                        className="shadow-sm bg-slate-50 border-slate-300 rounded cursor-grab border-solid border box-border p-4"
+                        className="shadow-sm bg-slate-50 border-slate-300 rounded cursor-grab border-solid border-2 box-border p-4"
                         data-grid={{
                             x: 0,
                             y: 0,

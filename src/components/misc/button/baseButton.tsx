@@ -16,16 +16,18 @@ const BaseButton = (props: BaseButtonProps) => {
             disabled={props.disabled || props.loading}
             size="lg"
             css={{
-                backgroundColor: "#FCFCFC",
-                border: "1px solid #DBDBDB",
-                boxShadow: "0px 2px 3px #07070714",
+                backgroundColor: "#fff",
+                // border: "1px solid #DBDBDB",
                 borderRadius: "7px",
+                justifyContent: "flex-start",
+                width: "100%",
             }}
+            className="group hover:bg-slate-100 hover:text-white px-14"
         >
             {props.loading ? (
                 <Loading type="points-opacity" color="currentColor" size="sm" />
             ) : (
-                <span className="flex">{props.children}</span>
+                props.children
             )}
         </Button>
     );

@@ -4,7 +4,7 @@ import qsLogo from "@Assets/logos/qs-logo.jpg";
 
 const Header = () => {
     return (
-        <div className="shadow-sm border-solid border-b pb-4 w-full border-slate-200">
+        <div className="shadow-sm border-solid border-b w-full border-slate-200 px-8 py-5">
             <span>
                 <Image alt="QS-logo" width={93} height={49} src={qsLogo} />
             </span>
